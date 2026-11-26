@@ -17,4 +17,4 @@ A base original também pode ser obtida no portal de dados abertos do Ministéri
 
 Pacote necessário: `AER`, que já carrega `lmtest` e `sandwich`.
 
-# a base é muito grande. O código remove modelos ao longo da execução para economizar memória.
+- A base é muito grande. O código remove modelos ao longo da execução para economizar memória.
