@@ -1,12 +1,20 @@
 # Escolaridade materna e parto cesáreo no Brasil (SINASC 2024)
 
 Trabalho de Econometria I (FGV EESP)
-
 Autoras: Maria Eduarda Carvalho Sandoval e Maria Carolina Alves de Araujo Tarzia
 
-- TRABALHO.R: código completo, com limpeza da base, estimações, tabelas e gráficos.
-- Releases: base original do SINASC 2024 (SINASC_2024.csv), a partir da qual o código começa.
+## Conteúdo
 
-Para rodar: abra o TRABALHO.R no R e, quando aparecer a janela, escolha o arquivo SINASC_2024.csv.
-O script faz a limpeza e salva a base final em base_final_sinasc2024.rds.
-Pacote necessário: AER, que já carrega lmtest e sandwich.
+- `TRABALHO.R`: código completo, com limpeza da base, estimações, tabelas e gráficos.
+- [Releases](https://github.com/mcarolinatarzia/trabalho_econometria-I/releases/tag/v1.0): base original do SINASC 2024 (`SINASC_2024.csv`), a partir da qual o código começa. O script faz a limpeza e salva a base final em `base_final_sinasc2024.rds`.
+
+A base original também pode ser obtida no portal de dados abertos do Ministério da Saúde: https://dadosabertos.saude.gov.br/dataset/sistema-de-informacao-sobre-nascidos-vivos-sinasc
+
+## Como rodar
+1. Baixe o `SINASC_2024.csv` na aba Releases.
+2. Abra o `TRABALHO.R` no R e rode o script. Quando aparecer a janela de seleção, escolha o arquivo `SINASC_2024.csv`.
+3. As Figuras 5 e 6 são salvas como PNG na pasta de trabalho do R. As demais aparecem no painel de gráficos.
+
+Pacote necessário: `AER`, que já carrega `lmtest` e `sandwich`.
+
+# a base é muito grande. O código remove modelos ao longo da execução para economizar memória.
